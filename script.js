@@ -30,7 +30,7 @@ function timer() {
 console.log(start)
 time.innerHTML = start;
 }
-setInterval(timer,100)
+setInterval(timer,1000)
 let points = 0;
 
 canvas.addEventListener('click', function(event){
@@ -38,7 +38,7 @@ canvas.addEventListener('click', function(event){
     let clicked = event.target.textContent;
 
     if(clicked == guess.textContent){
-        points = points + 10;
+        points = points + 1;
         score.innerHTML = points;
         GuessNumber()
         canvas.innerHTML = '';
